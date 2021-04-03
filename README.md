@@ -96,3 +96,7 @@ If a device with the given identifier already exists, the existing device will b
 
 - `404 Not Found` if the device does not exist
 - `204 No Content` on success
+
+## Credit
+
+This project is built on top of the work done by jakewright [here](https://github.com/jakewright/tutorials).
