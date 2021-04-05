@@ -4,7 +4,7 @@
 
 ### Device Registry Module
 
-Can be found under device_registry with all the necessary documentation.
+Used to register and access information on new devices. Can be found under device_registry with all the necessary documentation.
 
 ### Device Config Module
 
