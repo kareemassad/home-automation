@@ -3,7 +3,7 @@ import os
 import markdown
 
 # Import the framework
-from flask import Flask, g, request, jsonify
+from flask import Flask, g
 from flask_restful import Resource, Api, reqparse
 
 app = Flask(__name__)
