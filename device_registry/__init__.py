@@ -1,13 +1,13 @@
-import shelve
-import os
 import markdown
+import os
+import shelve
 
 # Import the framework
 from flask import Flask, g
 from flask_restful import Resource, Api, reqparse
 
+# Create an instance of Flask
 app = Flask(__name__)
-app.config["DEBUG"] = True
 
 # Create the API
 api = Api(app)
@@ -32,9 +32,7 @@ def index():
     """Present some documentation"""
 
     # Open the README file
-    with open(
-        os.path.dirname(app.root_path) + "/device_registry/README.md", "r"
-    ) as markdown_file:
+    with open(os.path.dirname(app.root_path) + "/README.md", "r") as markdown_file:
 
         # Read the content of the file
         content = markdown_file.read()
@@ -95,5 +93,3 @@ class Device(Resource):
 
 api.add_resource(DeviceList, "/devices")
 api.add_resource(Device, "/device/<string:identifier>")
-
-app.run()
