@@ -6,3 +6,4 @@ base:
 
 service.registry.device:
   database: /data/devices.db
+  apiGateway: somethingNew
